@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Security</string>
+
+    // EncryptedSharedPreferences
+    <string name="name_field_hint">Name</string>
+    <string name="pin_field_hint">Session hint</string>
+    <string name="save_fields">Save fields</string>
+</resources>
