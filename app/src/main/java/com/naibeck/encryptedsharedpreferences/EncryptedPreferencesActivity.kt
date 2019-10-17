@@ -12,9 +12,12 @@ import com.naibeck.encryptedsharedpreferences.databinding.ActivityEncryptedPrefe
 class EncryptedPreferencesActivity : AppCompatActivity() {
 
     private val encryptedPreferences by lazy {
+        // Creates or gets the key to encrypt and decrypt.
         val masterKeyAlias = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC)
+
+        // Creates the instance for the encrypted preferences.
         val preferences = EncryptedSharedPreferences.create(
-            "encrypted_preferences",
+            PREF_NAME,
             masterKeyAlias,
             this,
             EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
@@ -50,5 +53,7 @@ class EncryptedPreferencesActivity : AppCompatActivity() {
     companion object {
         private const val USER_NAME = "user.name"
         private const val USER_PIN = "user.pin"
+
+        private const val PREF_NAME = "encrypted_preferences"
     }
 }
