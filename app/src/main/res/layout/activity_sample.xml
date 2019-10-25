@@ -13,10 +13,23 @@
             android:id="@+id/encryptedPreferencesButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Encrypted Preferences"
+            android:text="@string/encrypted_preferences"
+            android:textAllCaps="false"
+            android:inputType="textCapWords"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/encryptedFileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/encrypted_file"
+            android:textAllCaps="false"
+            android:inputType="textCapWords"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/encryptedPreferencesButton" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

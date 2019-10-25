@@ -13,6 +13,7 @@ class SampleActivity : AppCompatActivity() {
         val binding: ActivitySampleBinding = DataBindingUtil.setContentView(this, R.layout.activity_sample)
         binding.apply {
             encryptedPreferencesButton.setOnClickListener { startActivity(Intent(this@SampleActivity, EncryptedPreferencesActivity::class.java)) }
+            encryptedFileButton.setOnClickListener { startActivity(Intent(this@SampleActivity, EncryptedFileActivity::class.java)) }
         }
     }
 }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.naibeck.encryptedsharedpreferences">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,8 @@
         android:supportsRtl="true"
         android:name=".SecurityApp"
         android:theme="@style/AppTheme">
-        <activity android:name=".EncryptedPreferencesActivity"></activity>
+        <activity android:name=".EncryptedFileActivity" />
+        <activity android:name=".EncryptedPreferencesActivity" />
         <activity android:name=".SampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

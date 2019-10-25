@@ -5,4 +5,8 @@
     <string name="name_field_hint">Name</string>
     <string name="pin_field_hint">Session hint</string>
     <string name="save_fields">Save fields</string>
+    <string name="encrypted_file">Encrypted file</string>
+    <string name="encrypted_preferences">Encrypted preferences</string>
+    <string name="downloading_message">Downloading...</string>
+    <string name="download_file">Download file</string>
 </resources>
